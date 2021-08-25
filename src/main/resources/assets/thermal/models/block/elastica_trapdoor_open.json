@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "thermal:block/elastica_trapdoor"
+  }
+}

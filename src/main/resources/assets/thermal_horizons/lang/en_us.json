@@ -1,0 +1,19 @@
+{
+  "_comment": "========================================================================================================",
+  "_comment": "Thermal Horizons",
+  "_comment": "========================================================================================================",
+
+  "block.thermal.elastica_door": "Elastica Door",
+  "block.thermal.elastica_fence": "Elastica Fence",
+  "block.thermal.elastica_fence_gate": "Elastica Fence Gate",
+  "block.thermal.elastica_leaves": "Elastica Leaves",
+  "block.thermal.elastica_log": "Elastica Log",
+  "block.thermal.elastica_planks": "Elastica Planks",
+  "block.thermal.elastica_sapling": "Elastica Sapling",
+  "block.thermal.elastica_slab": "Elastica Slab",
+  "block.thermal.elastica_stairs": "Elastica Stairs",
+  "block.thermal.elastica_wood": "Elastica Wood",
+  "block.thermal.potted_elastica_sapling": "Potted Elastica Sapling",
+  "block.thermal.stripped_elastica_log": "Stripped Elastica Log",
+  "block.thermal.stripped_elastica_wood": "Stripped Elastica Wood"
+}
