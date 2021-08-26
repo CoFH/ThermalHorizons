@@ -33,9 +33,6 @@ public class THorzBlocks {
 
         ComposterBlock.registerCompostable(0.3F, ITEMS.get(ID_ELASTICA_SAPLING));
         ComposterBlock.registerCompostable(0.3F, ITEMS.get(ID_ELASTICA_LEAVES));
-
-        AxeItem.BLOCK_STRIPPING_MAP.put(BLOCKS.get(ID_ELASTICA_LOG), BLOCKS.get(ID_STRIPPED_ELASTICA_LOG));
-        AxeItem.BLOCK_STRIPPING_MAP.put(BLOCKS.get(ID_ELASTICA_WOOD), BLOCKS.get(ID_STRIPPED_ELASTICA_WOOD));
     }
 
     private static void registerWoodBlocks() {
