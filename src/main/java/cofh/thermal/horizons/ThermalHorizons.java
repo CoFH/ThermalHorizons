@@ -60,7 +60,7 @@ public class ThermalHorizons {
     // region HELPERS
     private void registerRenderLayers() {
 
-        RenderType cutout = RenderType.getCutout();
+        RenderType cutout = RenderType.cutout();
 
         RenderTypeLookup.setRenderLayer(BLOCKS.get(ID_ELASTICA_SAPLING), cutout);
         RenderTypeLookup.setRenderLayer(BLOCKS.get("elastica_door"), cutout);

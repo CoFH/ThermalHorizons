@@ -29,51 +29,51 @@ public class THorzTagsProvider {
         }
 
         @Override
-        protected void registerTags() {
+        protected void addTags() {
 
-            getOrCreateBuilder(BlockTags.LEAVES).add(
+            tag(BlockTags.LEAVES).add(
                     BLOCKS.get("elastica_leaves")
             );
-            getOrCreateBuilder(BlockTags.LOGS).add(
+            tag(BlockTags.LOGS).add(
                     BLOCKS.get(ID_ELASTICA_LOG)
             );
-            getOrCreateBuilder(BlockTags.SAPLINGS).add(
+            tag(BlockTags.SAPLINGS).add(
                     BLOCKS.get("elastica_sapling")
             );
 
-            getOrCreateBuilder(BlockTags.DOORS).add(
+            tag(BlockTags.DOORS).add(
                     BLOCKS.get("elastica_door")
             );
-            getOrCreateBuilder(BlockTags.FENCES).add(
+            tag(BlockTags.FENCES).add(
                     BLOCKS.get("elastica_fence")
             );
-            getOrCreateBuilder(BlockTags.FENCE_GATES).add(
+            tag(BlockTags.FENCE_GATES).add(
                     BLOCKS.get("elastica_fence_gate")
             );
-            getOrCreateBuilder(BlockTags.PLANKS).add(
+            tag(BlockTags.PLANKS).add(
                     BLOCKS.get("elastica_planks")
             );
-            getOrCreateBuilder(BlockTags.SLABS).add(
+            tag(BlockTags.SLABS).add(
                     BLOCKS.get("elastica_slab")
             );
-            getOrCreateBuilder(BlockTags.STAIRS).add(
+            tag(BlockTags.STAIRS).add(
                     BLOCKS.get("elastica_stairs")
             );
 
-            getOrCreateBuilder(BlockTags.WOODEN_DOORS).add(
+            tag(BlockTags.WOODEN_DOORS).add(
                     BLOCKS.get("elastica_door")
             );
-            getOrCreateBuilder(BlockTags.WOODEN_FENCES).add(
+            tag(BlockTags.WOODEN_FENCES).add(
                     BLOCKS.get("elastica_fence")
             );
-            getOrCreateBuilder(BlockTags.WOODEN_SLABS).add(
+            tag(BlockTags.WOODEN_SLABS).add(
                     BLOCKS.get("elastica_slab")
             );
-            getOrCreateBuilder(BlockTags.WOODEN_STAIRS).add(
+            tag(BlockTags.WOODEN_STAIRS).add(
                     BLOCKS.get("elastica_stairs")
             );
 
-            getOrCreateBuilder(BlockTags.NON_FLAMMABLE_WOOD).add(
+            tag(BlockTags.NON_FLAMMABLE_WOOD).add(
                     BLOCKS.get("elastica_door"),
                     BLOCKS.get("elastica_fence"),
                     BLOCKS.get("elastica_fence_gate"),
@@ -86,7 +86,7 @@ public class THorzTagsProvider {
                     BLOCKS.get(ID_STRIPPED_ELASTICA_WOOD)
             );
 
-            getOrCreateBuilder(BlockTagsCoFH.LOGS_ELASTICA).add(
+            tag(BlockTagsCoFH.LOGS_ELASTICA).add(
                     BLOCKS.get(ID_ELASTICA_LOG),
                     BLOCKS.get(ID_ELASTICA_WOOD),
                     BLOCKS.get(ID_STRIPPED_ELASTICA_LOG),
@@ -110,7 +110,7 @@ public class THorzTagsProvider {
         }
 
         @Override
-        protected void registerTags() {
+        protected void addTags() {
 
             copy(BlockTagsCoFH.LOGS_ELASTICA, ItemTagsCoFH.LOGS_ELASTICA);
         }
@@ -131,7 +131,7 @@ public class THorzTagsProvider {
         }
 
         @Override
-        protected void registerTags() {
+        protected void addTags() {
 
         }
 

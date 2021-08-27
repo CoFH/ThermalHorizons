@@ -26,23 +26,23 @@ public class THorzFeatures {
     public static void setup() {
 
         RUBBER_TREE = register("rubber_tree",
-                Feature.TREE.withConfiguration((new BaseTreeFeatureConfig.Builder(
-                        new SimpleBlockStateProvider(BLOCKS.get(ID_ELASTICA_LOG).getDefaultState()),
-                        new SimpleBlockStateProvider(BLOCKS.get(ID_ELASTICA_LEAVES).getDefaultState()),
-                        new AcaciaFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0)),
+                Feature.TREE.configured((new BaseTreeFeatureConfig.Builder(
+                        new SimpleBlockStateProvider(BLOCKS.get(ID_ELASTICA_LOG).defaultBlockState()),
+                        new SimpleBlockStateProvider(BLOCKS.get(ID_ELASTICA_LEAVES).defaultBlockState()),
+                        new AcaciaFoliagePlacer(FeatureSpread.fixed(2), FeatureSpread.fixed(0)),
                         new StraightTrunkPlacer(3, 2, 0),
                         new TwoLayerFeature(1, 0, 1)))
-                        .setIgnoreVines()
+                        .ignoreVines()
                         .build()));
 
         MEGA_RUBBER_TREE = register("mega_rubber_tree",
-                Feature.TREE.withConfiguration((new BaseTreeFeatureConfig.Builder(
-                        new SimpleBlockStateProvider(BLOCKS.get(ID_ELASTICA_LOG).getDefaultState()),
-                        new SimpleBlockStateProvider(BLOCKS.get(ID_ELASTICA_LEAVES).getDefaultState()),
-                        new JungleFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 2),
+                Feature.TREE.configured((new BaseTreeFeatureConfig.Builder(
+                        new SimpleBlockStateProvider(BLOCKS.get(ID_ELASTICA_LOG).defaultBlockState()),
+                        new SimpleBlockStateProvider(BLOCKS.get(ID_ELASTICA_LEAVES).defaultBlockState()),
+                        new JungleFoliagePlacer(FeatureSpread.fixed(2), FeatureSpread.fixed(0), 2),
                         new MegaJungleTrunkPlacer(7, 2, 2),
                         new TwoLayerFeature(1, 1, 2)))
-                        .setIgnoreVines()
+                        .ignoreVines()
                         .build()));
     }
 
