@@ -3,6 +3,7 @@
   "_comment": "Thermal Horizons",
   "_comment": "========================================================================================================",
 
+  "block.thermal.elastica_button": "Elastica Button",
   "block.thermal.elastica_door": "Elastica Door",
   "block.thermal.elastica_fence": "Elastica Fence",
   "block.thermal.elastica_fence_gate": "Elastica Fence Gate",
@@ -12,8 +13,10 @@
   "block.thermal.elastica_pressure_plate": "Elastica Pressure Plate",
   "block.thermal.elastica_sapling": "Elastica Sapling",
   "block.thermal.elastica_slab": "Elastica Slab",
+  "block.thermal.elastica_sign": "Elastica Sign",
   "block.thermal.elastica_stairs": "Elastica Stairs",
   "block.thermal.elastica_trapdoor": "Elastica Trapdoor",
+  "block.thermal.elastica_wall_sign": "Elastica Wall Sign",
   "block.thermal.elastica_wood": "Elastica Wood",
   "block.thermal.potted_elastica_sapling": "Potted Elastica Sapling",
   "block.thermal.stripped_elastica_log": "Stripped Elastica Log",

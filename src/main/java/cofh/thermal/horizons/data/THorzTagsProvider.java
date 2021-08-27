@@ -1,5 +1,7 @@
 package cofh.thermal.horizons.data;
 
+import cofh.lib.util.references.BlockTagsCoFH;
+import cofh.lib.util.references.ItemTagsCoFH;
 import net.minecraft.data.BlockTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.FluidTagsProvider;
@@ -9,6 +11,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 import static cofh.lib.util.constants.Constants.ID_THERMAL;
 import static cofh.thermal.core.ThermalCore.BLOCKS;
+import static cofh.thermal.lib.common.ThermalIDs.*;
 
 public class THorzTagsProvider {
 
@@ -32,7 +35,7 @@ public class THorzTagsProvider {
                     BLOCKS.get("elastica_leaves")
             );
             getOrCreateBuilder(BlockTags.LOGS).add(
-                    BLOCKS.get("elastica_log")
+                    BLOCKS.get(ID_ELASTICA_LOG)
             );
             getOrCreateBuilder(BlockTags.SAPLINGS).add(
                     BLOCKS.get("elastica_sapling")
@@ -74,13 +77,20 @@ public class THorzTagsProvider {
                     BLOCKS.get("elastica_door"),
                     BLOCKS.get("elastica_fence"),
                     BLOCKS.get("elastica_fence_gate"),
-                    BLOCKS.get("elastica_log"),
+                    BLOCKS.get(ID_ELASTICA_LOG),
                     BLOCKS.get("elastica_planks"),
                     BLOCKS.get("elastica_slab"),
                     BLOCKS.get("elastica_stairs"),
-                    BLOCKS.get("elastica_wood"),
-                    BLOCKS.get("stripped_elastica_log"),
-                    BLOCKS.get("stripped_elastica_wood")
+                    BLOCKS.get(ID_ELASTICA_WOOD),
+                    BLOCKS.get(ID_STRIPPED_ELASTICA_LOG),
+                    BLOCKS.get(ID_STRIPPED_ELASTICA_WOOD)
+            );
+
+            getOrCreateBuilder(BlockTagsCoFH.LOGS_ELASTICA).add(
+                    BLOCKS.get(ID_ELASTICA_LOG),
+                    BLOCKS.get(ID_ELASTICA_WOOD),
+                    BLOCKS.get(ID_STRIPPED_ELASTICA_LOG),
+                    BLOCKS.get(ID_STRIPPED_ELASTICA_WOOD)
             );
         }
 
@@ -102,6 +112,7 @@ public class THorzTagsProvider {
         @Override
         protected void registerTags() {
 
+            copy(BlockTagsCoFH.LOGS_ELASTICA, ItemTagsCoFH.LOGS_ELASTICA);
         }
 
     }

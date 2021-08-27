@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "forge:elastica_logs"
+    }
+  ],
+  "result": {
+    "item": "thermal:elastica_planks",
+    "count": 4
+  }
+}

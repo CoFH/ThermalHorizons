@@ -1,16 +1,21 @@
 package cofh.thermal.horizons.init;
 
 import cofh.thermal.horizons.world.gen.feature.tree.RubberTree;
+import com.google.common.collect.ImmutableSet;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.AxeItem;
+import net.minecraft.tileentity.TileEntityType;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static cofh.lib.util.constants.Constants.ID_THERMAL_HORIZONS;
 import static cofh.thermal.core.ThermalCore.BLOCKS;
 import static cofh.thermal.core.ThermalCore.ITEMS;
-import static cofh.thermal.core.util.RegistrationHelper.registerBlock;
-import static cofh.thermal.core.util.RegistrationHelper.registerWoodBlockSet;
+import static cofh.thermal.core.util.RegistrationHelper.*;
+import static cofh.thermal.horizons.ThermalHorizons.ELASTICA;
 import static cofh.thermal.lib.common.ThermalIDs.*;
 import static net.minecraft.block.AbstractBlock.Properties.create;
 
@@ -33,6 +38,24 @@ public class THorzBlocks {
 
         ComposterBlock.registerCompostable(0.3F, ITEMS.get(ID_ELASTICA_SAPLING));
         ComposterBlock.registerCompostable(0.3F, ITEMS.get(ID_ELASTICA_LEAVES));
+
+
+        // AXE STRIPPING
+        {
+            Map<Block, Block> axeMap = new HashMap<>(AxeItem.BLOCK_STRIPPING_MAP.size() + 2);
+            axeMap.putAll(AxeItem.BLOCK_STRIPPING_MAP);
+            axeMap.put(BLOCKS.get(ID_ELASTICA_LOG), BLOCKS.get(ID_STRIPPED_ELASTICA_LOG));
+            axeMap.put(BLOCKS.get(ID_ELASTICA_WOOD), BLOCKS.get(ID_STRIPPED_ELASTICA_WOOD));
+            AxeItem.BLOCK_STRIPPING_MAP = axeMap;
+        }
+        // SIGN TILE STUFF
+        {
+            ImmutableSet.Builder<Block> builder = ImmutableSet.builder();
+            builder.addAll(TileEntityType.SIGN.validBlocks);
+            builder.add(BLOCKS.get("elastica_sign"));
+            builder.add(BLOCKS.get("elastica_wall_sign"));
+            TileEntityType.SIGN.validBlocks = builder.build();
+        }
     }
 
     private static void registerWoodBlocks() {
@@ -45,6 +68,9 @@ public class THorzBlocks {
         registerBlock(ID_ELASTICA_LEAVES, Blocks::createLeavesBlock, ID_THERMAL_HORIZONS);
 
         registerWoodBlockSet("elastica", Material.WOOD, MaterialColor.GREEN_TERRACOTTA, 1.5F, 2.5F, SoundType.WOOD, ID_THERMAL_HORIZONS);
+
+        registerBlockOnly("elastica_sign", () -> new StandingSignBlock(create(Material.WOOD).doesNotBlockMovement().hardnessAndResistance(1.0F).sound(SoundType.WOOD), ELASTICA));
+        registerBlockOnly("elastica_wall_sign", () -> new WallSignBlock(create(Material.WOOD).doesNotBlockMovement().hardnessAndResistance(1.0F).sound(SoundType.WOOD).lootFrom(BLOCKS.getSup("elastica_sign")), ELASTICA));
     }
 
 }
