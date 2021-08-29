@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "thermal:elastica_log",
-    "thermal:elastica_wood",
-    "thermal:stripped_elastica_log",
-    "thermal:stripped_elastica_wood"
-  ]
-}

@@ -15,7 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import static cofh.lib.util.constants.Constants.ID_THERMAL_HORIZONS;
 import static cofh.thermal.core.ThermalCore.BLOCKS;
-import static cofh.thermal.lib.common.ThermalIDs.ID_ELASTICA_SAPLING;
+import static cofh.thermal.lib.common.ThermalIDs.ID_RUBBERWOOD_SAPLING;
 
 @Mod(ID_THERMAL_HORIZONS)
 public class ThermalHorizons {
@@ -37,7 +37,7 @@ public class ThermalHorizons {
 
     }
 
-    public static final WoodType ELASTICA = WoodType.create("thermal:elastica");
+    public static final WoodType RUBBERWOOD = WoodType.create("thermal:rubberwood");
 
     // region INITIALIZATION
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -52,7 +52,7 @@ public class ThermalHorizons {
 
         event.enqueueWork(() -> {
             // WOOD TYPES
-            Atlases.addWoodType(ELASTICA);
+            Atlases.addWoodType(RUBBERWOOD);
         });
     }
     // endregion
@@ -62,9 +62,9 @@ public class ThermalHorizons {
 
         RenderType cutout = RenderType.cutout();
 
-        RenderTypeLookup.setRenderLayer(BLOCKS.get(ID_ELASTICA_SAPLING), cutout);
-        RenderTypeLookup.setRenderLayer(BLOCKS.get("elastica_door"), cutout);
-        RenderTypeLookup.setRenderLayer(BLOCKS.get("elastica_trapdoor"), cutout);
+        RenderTypeLookup.setRenderLayer(BLOCKS.get(ID_RUBBERWOOD_SAPLING), cutout);
+        RenderTypeLookup.setRenderLayer(BLOCKS.get("rubberwood_door"), cutout);
+        RenderTypeLookup.setRenderLayer(BLOCKS.get("rubberwood_trapdoor"), cutout);
     }
     // endregion
 }

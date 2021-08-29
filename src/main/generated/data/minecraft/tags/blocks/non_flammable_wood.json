@@ -1,15 +1,15 @@
 {
   "replace": false,
   "values": [
-    "thermal:elastica_door",
-    "thermal:elastica_fence",
-    "thermal:elastica_fence_gate",
-    "thermal:elastica_log",
-    "thermal:elastica_planks",
-    "thermal:elastica_slab",
-    "thermal:elastica_stairs",
-    "thermal:elastica_wood",
-    "thermal:stripped_elastica_log",
-    "thermal:stripped_elastica_wood"
+    "thermal:rubberwood_door",
+    "thermal:rubberwood_fence",
+    "thermal:rubberwood_fence_gate",
+    "thermal:rubberwood_log",
+    "thermal:rubberwood_planks",
+    "thermal:rubberwood_slab",
+    "thermal:rubberwood_stairs",
+    "thermal:rubberwood_wood",
+    "thermal:stripped_rubberwood_log",
+    "thermal:stripped_rubberwood_wood"
   ]
 }

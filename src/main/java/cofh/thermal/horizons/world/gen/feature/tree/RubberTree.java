@@ -14,14 +14,14 @@ public class RubberTree extends BigTree {
     @Override
     protected ConfiguredFeature<BaseTreeFeatureConfig, ?> getConfiguredFeature(Random randomIn, boolean largeHive) {
 
-        return THorzFeatures.RUBBER_TREE;
+        return THorzFeatures.RUBBERWOOD_TREE;
     }
 
     @Nullable
     @Override
     protected ConfiguredFeature<BaseTreeFeatureConfig, ?> getConfiguredMegaFeature(Random rand) {
 
-        return THorzFeatures.MEGA_RUBBER_TREE;
+        return THorzFeatures.MEGA_RUBBERWOOD_TREE;
     }
 
 }

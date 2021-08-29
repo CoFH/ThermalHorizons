@@ -14,8 +14,8 @@ import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 
 import static cofh.lib.util.constants.Constants.ID_THERMAL;
 import static cofh.thermal.core.ThermalCore.BLOCKS;
-import static cofh.thermal.lib.common.ThermalIDs.ID_ELASTICA_LEAVES;
-import static cofh.thermal.lib.common.ThermalIDs.ID_ELASTICA_LOG;
+import static cofh.thermal.lib.common.ThermalIDs.ID_RUBBERWOOD_LEAVES;
+import static cofh.thermal.lib.common.ThermalIDs.ID_RUBBERWOOD_LOG;
 
 public class THorzFeatures {
 
@@ -25,20 +25,20 @@ public class THorzFeatures {
 
     public static void setup() {
 
-        RUBBER_TREE = register("rubber_tree",
+        RUBBERWOOD_TREE = register("rubberwood_tree",
                 Feature.TREE.configured((new BaseTreeFeatureConfig.Builder(
-                        new SimpleBlockStateProvider(BLOCKS.get(ID_ELASTICA_LOG).defaultBlockState()),
-                        new SimpleBlockStateProvider(BLOCKS.get(ID_ELASTICA_LEAVES).defaultBlockState()),
+                        new SimpleBlockStateProvider(BLOCKS.get(ID_RUBBERWOOD_LOG).defaultBlockState()),
+                        new SimpleBlockStateProvider(BLOCKS.get(ID_RUBBERWOOD_LEAVES).defaultBlockState()),
                         new AcaciaFoliagePlacer(FeatureSpread.fixed(2), FeatureSpread.fixed(0)),
                         new StraightTrunkPlacer(3, 2, 0),
                         new TwoLayerFeature(1, 0, 1)))
                         .ignoreVines()
                         .build()));
 
-        MEGA_RUBBER_TREE = register("mega_rubber_tree",
+        MEGA_RUBBERWOOD_TREE = register("mega_rubberwood_tree",
                 Feature.TREE.configured((new BaseTreeFeatureConfig.Builder(
-                        new SimpleBlockStateProvider(BLOCKS.get(ID_ELASTICA_LOG).defaultBlockState()),
-                        new SimpleBlockStateProvider(BLOCKS.get(ID_ELASTICA_LEAVES).defaultBlockState()),
+                        new SimpleBlockStateProvider(BLOCKS.get(ID_RUBBERWOOD_LOG).defaultBlockState()),
+                        new SimpleBlockStateProvider(BLOCKS.get(ID_RUBBERWOOD_LEAVES).defaultBlockState()),
                         new JungleFoliagePlacer(FeatureSpread.fixed(2), FeatureSpread.fixed(0), 2),
                         new MegaJungleTrunkPlacer(7, 2, 2),
                         new TwoLayerFeature(1, 1, 2)))
@@ -61,7 +61,7 @@ public class THorzFeatures {
         return new TopSolidRangeConfig(min, min, max);
     }
 
-    public static ConfiguredFeature<BaseTreeFeatureConfig, ?> RUBBER_TREE;
-    public static ConfiguredFeature<BaseTreeFeatureConfig, ?> MEGA_RUBBER_TREE;
+    public static ConfiguredFeature<BaseTreeFeatureConfig, ?> RUBBERWOOD_TREE;
+    public static ConfiguredFeature<BaseTreeFeatureConfig, ?> MEGA_RUBBERWOOD_TREE;
 
 }

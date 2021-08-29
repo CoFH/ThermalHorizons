@@ -32,65 +32,65 @@ public class THorzTagsProvider {
         protected void addTags() {
 
             tag(BlockTags.LEAVES).add(
-                    BLOCKS.get("elastica_leaves")
+                    BLOCKS.get("rubberwood_leaves")
             );
             tag(BlockTags.LOGS).add(
-                    BLOCKS.get(ID_ELASTICA_LOG)
+                    BLOCKS.get(ID_RUBBERWOOD_LOG)
             );
             tag(BlockTags.SAPLINGS).add(
-                    BLOCKS.get("elastica_sapling")
+                    BLOCKS.get("rubberwood_sapling")
             );
 
             tag(BlockTags.DOORS).add(
-                    BLOCKS.get("elastica_door")
+                    BLOCKS.get("rubberwood_door")
             );
             tag(BlockTags.FENCES).add(
-                    BLOCKS.get("elastica_fence")
+                    BLOCKS.get("rubberwood_fence")
             );
             tag(BlockTags.FENCE_GATES).add(
-                    BLOCKS.get("elastica_fence_gate")
+                    BLOCKS.get("rubberwood_fence_gate")
             );
             tag(BlockTags.PLANKS).add(
-                    BLOCKS.get("elastica_planks")
+                    BLOCKS.get("rubberwood_planks")
             );
             tag(BlockTags.SLABS).add(
-                    BLOCKS.get("elastica_slab")
+                    BLOCKS.get("rubberwood_slab")
             );
             tag(BlockTags.STAIRS).add(
-                    BLOCKS.get("elastica_stairs")
+                    BLOCKS.get("rubberwood_stairs")
             );
 
             tag(BlockTags.WOODEN_DOORS).add(
-                    BLOCKS.get("elastica_door")
+                    BLOCKS.get("rubberwood_door")
             );
             tag(BlockTags.WOODEN_FENCES).add(
-                    BLOCKS.get("elastica_fence")
+                    BLOCKS.get("rubberwood_fence")
             );
             tag(BlockTags.WOODEN_SLABS).add(
-                    BLOCKS.get("elastica_slab")
+                    BLOCKS.get("rubberwood_slab")
             );
             tag(BlockTags.WOODEN_STAIRS).add(
-                    BLOCKS.get("elastica_stairs")
+                    BLOCKS.get("rubberwood_stairs")
             );
 
             tag(BlockTags.NON_FLAMMABLE_WOOD).add(
-                    BLOCKS.get("elastica_door"),
-                    BLOCKS.get("elastica_fence"),
-                    BLOCKS.get("elastica_fence_gate"),
-                    BLOCKS.get(ID_ELASTICA_LOG),
-                    BLOCKS.get("elastica_planks"),
-                    BLOCKS.get("elastica_slab"),
-                    BLOCKS.get("elastica_stairs"),
-                    BLOCKS.get(ID_ELASTICA_WOOD),
-                    BLOCKS.get(ID_STRIPPED_ELASTICA_LOG),
-                    BLOCKS.get(ID_STRIPPED_ELASTICA_WOOD)
+                    BLOCKS.get("rubberwood_door"),
+                    BLOCKS.get("rubberwood_fence"),
+                    BLOCKS.get("rubberwood_fence_gate"),
+                    BLOCKS.get(ID_RUBBERWOOD_LOG),
+                    BLOCKS.get("rubberwood_planks"),
+                    BLOCKS.get("rubberwood_slab"),
+                    BLOCKS.get("rubberwood_stairs"),
+                    BLOCKS.get(ID_RUBBERWOOD_WOOD),
+                    BLOCKS.get(ID_STRIPPED_RUBBERWOOD_LOG),
+                    BLOCKS.get(ID_STRIPPED_RUBBERWOOD_WOOD)
             );
 
-            tag(BlockTagsCoFH.LOGS_ELASTICA).add(
-                    BLOCKS.get(ID_ELASTICA_LOG),
-                    BLOCKS.get(ID_ELASTICA_WOOD),
-                    BLOCKS.get(ID_STRIPPED_ELASTICA_LOG),
-                    BLOCKS.get(ID_STRIPPED_ELASTICA_WOOD)
+            tag(BlockTagsCoFH.LOGS_RUBBERWOOD).add(
+                    BLOCKS.get(ID_RUBBERWOOD_LOG),
+                    BLOCKS.get(ID_RUBBERWOOD_WOOD),
+                    BLOCKS.get(ID_STRIPPED_RUBBERWOOD_LOG),
+                    BLOCKS.get(ID_STRIPPED_RUBBERWOOD_WOOD)
             );
         }
 
@@ -112,7 +112,7 @@ public class THorzTagsProvider {
         @Override
         protected void addTags() {
 
-            copy(BlockTagsCoFH.LOGS_ELASTICA, ItemTagsCoFH.LOGS_ELASTICA);
+            copy(BlockTagsCoFH.LOGS_RUBBERWOOD, ItemTagsCoFH.LOGS_RUBBERWOOD);
         }
 
     }

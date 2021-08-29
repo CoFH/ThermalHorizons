@@ -1,9 +1,0 @@
-{
-  "type": "thermal:tree_extractor",
-  "trunk": "thermal:elastica_log",
-  "leaves": "thermal:elastica_leaves",
-  "result": {
-    "fluid": "thermal:latex",
-    "amount": 50
-  }
-}

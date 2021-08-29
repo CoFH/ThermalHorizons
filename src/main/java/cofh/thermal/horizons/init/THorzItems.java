@@ -16,7 +16,7 @@ public class THorzItems {
 
     public static void register() {
 
-        registerItem("elastica_sign", () -> new SignItemCoFH(new Item.Properties().stacksTo(16).tab(THERMAL_BLOCKS), BLOCKS.get("elastica_sign"), BLOCKS.get("elastica_wall_sign")).setModId(ID_THERMAL_HORIZONS));
+        registerItem("rubberwood_sign", () -> new SignItemCoFH(new Item.Properties().stacksTo(16).tab(THERMAL_BLOCKS), BLOCKS.get("rubberwood_sign"), BLOCKS.get("rubberwood_wall_sign")).setModId(ID_THERMAL_HORIZONS));
     }
 
 }

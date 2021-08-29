@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "thermal:block/elastica_planks",
-    "top": "thermal:block/elastica_planks",
-    "side": "thermal:block/elastica_planks"
-  }
-}

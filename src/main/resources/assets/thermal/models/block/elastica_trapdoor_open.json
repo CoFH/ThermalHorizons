@@ -1,6 +1,0 @@
-{
-  "parent": "cofh_core:block/trapdoor_open",
-  "textures": {
-    "texture": "thermal:block/elastica_trapdoor"
-  }
-}
