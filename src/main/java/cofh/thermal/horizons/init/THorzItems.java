@@ -1,6 +1,6 @@
 package cofh.thermal.horizons.init;
 
-import cofh.core.item.SignItemCoFH;
+import cofh.lib.item.impl.SignItemCoFH;
 import net.minecraft.item.Item;
 
 import static cofh.lib.util.constants.Constants.ID_THERMAL_HORIZONS;
