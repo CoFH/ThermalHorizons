@@ -1,0 +1,24 @@
+{
+  "_comment": "========================================================================================================",
+  "_comment": "Thermal Horizons",
+  "_comment": "========================================================================================================",
+
+  "block.thermal.rubberwood_button": "Rubberwood Button",
+  "block.thermal.rubberwood_door": "Rubberwood Door",
+  "block.thermal.rubberwood_fence": "Rubberwood Fence",
+  "block.thermal.rubberwood_fence_gate": "Rubberwood Fence Gate",
+  "block.thermal.rubberwood_leaves": "Rubberwood Leaves",
+  "block.thermal.rubberwood_log": "Rubberwood Log",
+  "block.thermal.rubberwood_planks": "Rubberwood Planks",
+  "block.thermal.rubberwood_pressure_plate": "Rubberwood Pressure Plate",
+  "block.thermal.rubberwood_sapling": "Rubberwood Sapling",
+  "block.thermal.rubberwood_slab": "Rubberwood Slab",
+  "block.thermal.rubberwood_sign": "Rubberwood Sign",
+  "block.thermal.rubberwood_stairs": "Rubberwood Stairs",
+  "block.thermal.rubberwood_trapdoor": "Rubberwood Trapdoor",
+  "block.thermal.rubberwood_wall_sign": "Rubberwood Wall Sign",
+  "block.thermal.rubberwood_wood": "Rubberwood Wood",
+  "block.thermal.potted_rubberwood_sapling": "Potted Rubberwood Sapling",
+  "block.thermal.stripped_rubberwood_log": "Stripped Rubberwood Log",
+  "block.thermal.stripped_rubberwood_wood": "Stripped Rubberwood Wood"
+}
