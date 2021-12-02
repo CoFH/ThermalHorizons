@@ -16,7 +16,7 @@ import static cofh.thermal.core.ThermalCore.BLOCKS;
 import static cofh.thermal.core.ThermalCore.ITEMS;
 import static cofh.thermal.core.util.RegistrationHelper.*;
 import static cofh.thermal.horizons.ThermalHorizons.RUBBERWOOD;
-import static cofh.thermal.lib.common.ThermalIDs.*;
+import static cofh.thermal.horizons.init.THorzIDs.*;
 import static net.minecraft.block.AbstractBlock.Properties.of;
 
 public class THorzBlocks {

@@ -14,8 +14,8 @@ import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 
 import static cofh.lib.util.constants.Constants.ID_THERMAL;
 import static cofh.thermal.core.ThermalCore.BLOCKS;
-import static cofh.thermal.lib.common.ThermalIDs.ID_RUBBERWOOD_LEAVES;
-import static cofh.thermal.lib.common.ThermalIDs.ID_RUBBERWOOD_LOG;
+import static cofh.thermal.horizons.init.THorzIDs.ID_RUBBERWOOD_LEAVES;
+import static cofh.thermal.horizons.init.THorzIDs.ID_RUBBERWOOD_LOG;
 
 public class THorzFeatures {
 
