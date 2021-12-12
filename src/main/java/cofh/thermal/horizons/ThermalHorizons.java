@@ -6,7 +6,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import static cofh.lib.util.constants.Constants.ID_THERMAL_HORIZONS;
 
-@Mod(ID_THERMAL_HORIZONS)
+@Mod (ID_THERMAL_HORIZONS)
 public class ThermalHorizons {
 
     public ThermalHorizons() {
