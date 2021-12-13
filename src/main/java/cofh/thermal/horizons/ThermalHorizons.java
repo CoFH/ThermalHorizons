@@ -17,7 +17,7 @@ import static cofh.lib.util.constants.Constants.ID_THERMAL_HORIZONS;
 import static cofh.thermal.core.ThermalCore.BLOCKS;
 import static cofh.thermal.horizons.init.THorzIDs.ID_RUBBERWOOD_SAPLING;
 
-@Mod(ID_THERMAL_HORIZONS)
+@Mod (ID_THERMAL_HORIZONS)
 public class ThermalHorizons {
 
     public ThermalHorizons() {

@@ -12,7 +12,7 @@ import static cofh.lib.util.helpers.ItemHelper.cloneStack;
 import static cofh.thermal.core.ThermalCore.ITEMS;
 import static cofh.thermal.horizons.init.THorzIDs.ID_RUBBERWOOD_SAPLING;
 
-@Mod.EventBusSubscriber(modid = ID_THERMAL_HORIZONS)
+@Mod.EventBusSubscriber (modid = ID_THERMAL_HORIZONS)
 public class THorzCommonSetupEvents {
 
     private THorzCommonSetupEvents() {
