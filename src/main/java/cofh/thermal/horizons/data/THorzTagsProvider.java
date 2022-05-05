@@ -1,11 +1,10 @@
 package cofh.thermal.horizons.data;
 
-import cofh.lib.util.references.BlockTagsCoFH;
-import cofh.lib.util.references.ItemTagsCoFH;
-import net.minecraft.data.BlockTagsProvider;
+import cofh.lib.util.references.CoFHTags;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.FluidTagsProvider;
-import net.minecraft.data.ItemTagsProvider;
+import net.minecraft.data.tags.BlockTagsProvider;
+import net.minecraft.data.tags.FluidTagsProvider;
+import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -86,7 +85,7 @@ public class THorzTagsProvider {
                     BLOCKS.get(ID_STRIPPED_RUBBERWOOD_WOOD)
             );
 
-            tag(BlockTagsCoFH.LOGS_RUBBERWOOD).add(
+            tag(CoFHTags.Blocks.LOGS_RUBBERWOOD).add(
                     BLOCKS.get(ID_RUBBERWOOD_LOG),
                     BLOCKS.get(ID_RUBBERWOOD_WOOD),
                     BLOCKS.get(ID_STRIPPED_RUBBERWOOD_LOG),
@@ -112,7 +111,7 @@ public class THorzTagsProvider {
         @Override
         protected void addTags() {
 
-            copy(BlockTagsCoFH.LOGS_RUBBERWOOD, ItemTagsCoFH.LOGS_RUBBERWOOD);
+            copy(CoFHTags.Blocks.LOGS_RUBBERWOOD, CoFHTags.Items.LOGS_RUBBERWOOD);
         }
 
     }

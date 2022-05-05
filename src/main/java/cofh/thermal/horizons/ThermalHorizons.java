@@ -3,10 +3,10 @@ package cofh.thermal.horizons;
 import cofh.thermal.horizons.init.THorzBlocks;
 import cofh.thermal.horizons.init.THorzItems;
 import cofh.thermal.horizons.world.gen.feature.THorzFeatures;
-import net.minecraft.block.WoodType;
-import net.minecraft.client.renderer.Atlases;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -52,7 +52,7 @@ public class ThermalHorizons {
 
         event.enqueueWork(() -> {
             // WOOD TYPES
-            Atlases.addWoodType(RUBBERWOOD);
+            Sheets.addWoodType(RUBBERWOOD);
         });
     }
     // endregion
@@ -62,9 +62,9 @@ public class ThermalHorizons {
 
         RenderType cutout = RenderType.cutout();
 
-        RenderTypeLookup.setRenderLayer(BLOCKS.get(ID_RUBBERWOOD_SAPLING), cutout);
-        RenderTypeLookup.setRenderLayer(BLOCKS.get("rubberwood_door"), cutout);
-        RenderTypeLookup.setRenderLayer(BLOCKS.get("rubberwood_trapdoor"), cutout);
+        ItemBlockRenderTypes.setRenderLayer(BLOCKS.get(ID_RUBBERWOOD_SAPLING), cutout);
+        ItemBlockRenderTypes.setRenderLayer(BLOCKS.get("rubberwood_door"), cutout);
+        ItemBlockRenderTypes.setRenderLayer(BLOCKS.get("rubberwood_trapdoor"), cutout);
     }
     // endregion
 }
