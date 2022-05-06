@@ -1,6 +1,6 @@
 package cofh.thermal.horizons.event;
 
-import cofh.thermal.lib.common.ThermalConfig;
+import cofh.thermal.core.config.ThermalCoreConfig;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.common.BasicItemListing;
 import net.minecraftforge.event.village.WandererTradesEvent;
@@ -30,7 +30,7 @@ public class THorzCommonSetupEvents {
     @SubscribeEvent
     public static void setupWandererTrades(final WandererTradesEvent event) {
 
-        if (!ThermalConfig.enableWandererTrades.get()) {
+        if (!ThermalCoreConfig.enableWandererTrades) {
             return;
         }
         event.getRareTrades().add(new BasicItemListing(cloneStack(Items.EMERALD, 8), cloneStack(ITEMS.get(ID_RUBBERWOOD_SAPLING)), 8, 1, 0.05F));
