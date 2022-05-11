@@ -19,7 +19,7 @@ Contains additional biomes and world features.
 [[dependencies.thermal_horizons]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.16.5,)"
+versionRange = "[1.18.2,)"
 ordering = "AFTER"
 side = "BOTH"
 
@@ -33,13 +33,13 @@ side = "BOTH"
 [[dependencies.thermal_horizons]]
 modId = "cofh_core"
 mandatory = true
-versionRange = "[1.4,1.5]"
+versionRange = "[1.6,1.7]"
 ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.thermal_horizons]]
 modId = "thermal"
 mandatory = true
-versionRange = "[1.4,1.5]"
+versionRange = "[1.6,1.7]"
 ordering = "AFTER"
 side = "BOTH"
