@@ -1,11 +1,9 @@
 package cofh.thermal.horizons.data;
 
 import cofh.lib.data.RecipeProviderCoFH;
-import cofh.lib.util.DeferredRegisterCoFH;
 import cofh.thermal.lib.common.ThermalFlags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.world.item.Item;
 
 import java.util.function.Consumer;
 
@@ -29,7 +27,7 @@ public class THorzRecipeProvider extends RecipeProviderCoFH {
     @Override
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer) {
 
-        DeferredRegisterCoFH<Item> reg = ITEMS;
+        var reg = ITEMS;
 
     }
 
