@@ -48,8 +48,7 @@ public class ThermalHorizons {
 
     private void clientSetup(final FMLClientSetupEvent event) {
 
-        this.registerRenderLayers();
-
+        event.enqueueWork(this::registerRenderLayers);
         event.enqueueWork(() -> {
             // WOOD TYPES
             Sheets.addWoodType(RUBBERWOOD);
