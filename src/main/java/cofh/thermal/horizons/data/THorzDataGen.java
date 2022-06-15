@@ -31,7 +31,6 @@ public class THorzDataGen {
 
         gen.addProvider(blockTags);
         gen.addProvider(new THorzTagsProvider.Item(gen, blockTags, exFileHelper));
-        gen.addProvider(new THorzTagsProvider.Fluid(gen, exFileHelper));
 
         gen.addProvider(new THorzLootTableProvider(gen));
         gen.addProvider(new THorzRecipeProvider(gen));

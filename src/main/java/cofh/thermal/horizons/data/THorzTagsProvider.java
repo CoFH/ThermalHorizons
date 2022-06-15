@@ -3,7 +3,6 @@ package cofh.thermal.horizons.data;
 import cofh.thermal.lib.util.references.ThermalTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
-import net.minecraft.data.tags.FluidTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -112,26 +111,6 @@ public class THorzTagsProvider {
         protected void addTags() {
 
             copy(ThermalTags.Blocks.LOGS_RUBBERWOOD, ThermalTags.Items.LOGS_RUBBERWOOD);
-        }
-
-    }
-
-    public static class Fluid extends FluidTagsProvider {
-
-        public Fluid(DataGenerator gen, ExistingFileHelper existingFileHelper) {
-
-            super(gen, ID_THERMAL, existingFileHelper);
-        }
-
-        @Override
-        public String getName() {
-
-            return "Thermal Horizons: Fluid Tags";
-        }
-
-        @Override
-        protected void addTags() {
-
         }
 
     }
